@@ -1,4 +1,4 @@
-import Field from './field.js';
+import Field from './field';
 
 export default class Game {
   constructor(field, scoreElem) {
@@ -48,8 +48,7 @@ export default class Game {
     const randIdx = Math.floor(Math.random() * this.field.cells.length);
     if (goblinIdx === randIdx) {
       return this.getNewPosition(goblinIdx);
-    } else {
-      return randIdx;
     }
+    return randIdx;
   }
 }

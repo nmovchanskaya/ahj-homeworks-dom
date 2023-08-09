@@ -1,5 +1,5 @@
-import Field from './field.js';
-import Game from './game.js';
+import Field from './field';
+import Game from './game';
 
 const fieldElem = document.querySelector('.field');
 const field = new Field(fieldElem);
