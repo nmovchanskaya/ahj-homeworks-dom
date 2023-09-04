@@ -29,9 +29,8 @@ export default class Game {
   // random move to different cell
   move() {
     // remove old one if we have
-    const goblinIdx = this.field.cells.findIndex((item) => item.classList.contains('goblin'));
-    if (goblinIdx > -1) {
-      this.field.cells[goblinIdx].classList.remove('goblin');
+    if (this.goblinIdx > -1) {
+      this.field.cells[this.goblinIdx].classList.remove('goblin');
     }
 
     // move to another cell
